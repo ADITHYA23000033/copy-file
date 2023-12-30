@@ -5,33 +5,27 @@ To write a python program for copying the contents from one file to another file
 PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
-### Step 1
-Import panda module as pd
+### Step 1:
+Create a text1.txt with some content in it
 
 ### Step 2:
-Read the csv file
+Open the text1.txt file in read mode
 
 ### Step 3:
-Print the first 10rows
+Create a copy.txt file using write mode
 
 ### Step 4:
-Print the next 5rows
-
-### Step 5:
-Print the toal no.of rows and columns with argument 0 for row and argument 1 for column.
+Copy the content of text1.txt file to copy.txt using write function
 ## PROGRAM:
 ```
-#Program to read contents from a CSV file.
-#Developed by: Aditya V
-#Reg No: 23000033
-import pandas as pd
-df=pd.read_csv("nba.csv")
-print(df.head(10))
-print(df.tail())
-print("rows",df.axes[0])
-print("columns",df.axes[1])
-print("no of rows",len(df.axes[0]))
-print("no. of columns",len(df.axes[1]))
+Program for copying the contents from one file to another file
+Developed by: Aditya V
+Register Number: 23000033
+
+with open("text1.txt",'r') as fp:
+    msg1=fp.read()
+with open("copytxt",'w') as fp1:
+    fp1.write(msg1)
 ```
 ### OUTPUT:
 ![5 C](https://github.com/ADITHYA23000033/copy-file/assets/148514544/73d65810-f4f6-4222-8281-9d479b20df78)
